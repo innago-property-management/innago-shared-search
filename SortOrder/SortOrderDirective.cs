@@ -1,3 +1,5 @@
+#nullable enable
+
 namespace Taazaa.Shared.DevKit.Framework.Search.SortOrder;
 
 using System;
@@ -11,7 +13,7 @@ using System.Linq.Expressions;
 ///    The type of the property.
 /// </typeparam>
 // TODO JsonConverter
-public class SortOrderDirective<TProperty> : ISortOrderDirective
+public sealed class SortOrderDirective<TProperty> : ISortOrderDirective
 {
     /// <inheritdoc />
     public SortOrderDirection Direction { get; set; }
@@ -45,7 +47,7 @@ public class SortOrderDirective<TProperty> : ISortOrderDirective
         return new SortOrderDirective<TProperty> { Direction = direction };
     }
 
-    internal virtual Expression<Func<TSource, TProperty>> GetSelector<TSource>(string propertyName)
+    internal Expression<Func<TSource, TProperty>> GetSelector<TSource>(string propertyName)
     {
         ParameterExpression parameter = Expression.Parameter(typeof(TSource));
         MemberExpression property = Expression.Property(parameter, propertyName);

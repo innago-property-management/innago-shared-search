@@ -1,3 +1,5 @@
+#nullable enable
+
 namespace Taazaa.Shared.DevKit.Framework.Search.SortOrder;
 
 using System.Linq;
