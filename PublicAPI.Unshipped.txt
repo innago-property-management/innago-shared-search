@@ -1,0 +1,7 @@
+Taazaa.Shared.DevKit.Framework.Search.SortOrder.ISortOrderDirective
+Taazaa.Shared.DevKit.Framework.Search.SortOrder.ISortOrderDirective.Apply<TSource>(System.Linq.IQueryable<TSource> queryable, string propertyName) -> System.Linq.IOrderedQueryable<TSource>
+Taazaa.Shared.DevKit.Framework.Search.SortOrder.ISortOrderDirective.Direction.get -> Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirection
+Taazaa.Shared.DevKit.Framework.Search.SortOrder.ISortOrderDirective.Direction.set -> void
+Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirection
+Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirection.Ascending = 0 -> Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirection
+Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirection.Descending = 1 -> Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirection
