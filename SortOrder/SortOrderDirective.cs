@@ -5,6 +5,9 @@ namespace Taazaa.Shared.DevKit.Framework.Search.SortOrder;
 using System;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Text.Json.Serialization;
+
+using Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
 
 /// <summary>
 ///    The sort order directive.
@@ -12,8 +15,8 @@ using System.Linq.Expressions;
 /// <typeparam name="TProperty">
 ///    The type of the property.
 /// </typeparam>
-// TODO JsonConverter
-public sealed class SortOrderDirective<TProperty> : ISortOrderDirective
+[JsonConverter(typeof(SortOrderDirectiveJsonConverter))]
+public class SortOrderDirective<TProperty> : ISortOrderDirective
 {
     /// <inheritdoc />
     public SortOrderDirection Direction { get; set; }
@@ -47,7 +50,7 @@ public sealed class SortOrderDirective<TProperty> : ISortOrderDirective
         return new SortOrderDirective<TProperty> { Direction = direction };
     }
 
-    internal Expression<Func<TSource, TProperty>> GetSelector<TSource>(string propertyName)
+    internal virtual Expression<Func<TSource, TProperty>> GetSelector<TSource>(string propertyName)
     {
         ParameterExpression parameter = Expression.Parameter(typeof(TSource));
         MemberExpression property = Expression.Property(parameter, propertyName);
