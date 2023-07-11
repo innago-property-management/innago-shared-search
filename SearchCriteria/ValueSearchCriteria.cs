@@ -4,9 +4,11 @@ namespace Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
 
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 
 using JetBrains.Annotations;
 
+using Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
 using Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions;
 
 /// <summary>
@@ -16,7 +18,7 @@ using Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions;
 ///     The type of the member to search for. 
 /// </typeparam>
 [PublicAPI]
-////[JsonConverter(typeof(ComparableSearchExpressionJsonConverter))] TODO
+[JsonConverter(typeof(ComparableSearchExpressionJsonConverter))]
 public class ValueSearchCriteria<TMember> : ComparableSearchCriteria<TMember>, IComparableSearchCriteria<TMember>
 {
     private IEnumerable<ValueSearchCriteria<TMember>>? and;

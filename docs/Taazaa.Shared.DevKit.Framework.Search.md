@@ -11,6 +11,9 @@
 
 | public type | description |
 | --- | --- |
+| class [BooleanSearchCriteriaJsonConverter](./Taazaa.Shared.DevKit.Framework.Search.JsonConverters/BooleanSearchCriteriaJsonConverter.md) | Converts a [`BooleanSearchCriteria`](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/BooleanSearchCriteria.md) to or from JSON. |
+| class [ComparableSearchExpressionJsonConverter](./Taazaa.Shared.DevKit.Framework.Search.JsonConverters/ComparableSearchExpressionJsonConverter.md) | Converts a [`IComparableSearchCriteria`](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/IComparableSearchCriteria-1.md) to JSON. |
+| class [SearchValueJsonConverter](./Taazaa.Shared.DevKit.Framework.Search.JsonConverters/SearchValueJsonConverter.md) | Converts a [`SearchValue`](./Taazaa.Shared.DevKit.Framework.Search/SearchValue-1.md) to or from JSON. |
 | class [SortOrderDirectiveJsonConverter](./Taazaa.Shared.DevKit.Framework.Search.JsonConverters/SortOrderDirectiveJsonConverter.md) | The sort order directive json converter. |
 
 ## Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions namespace

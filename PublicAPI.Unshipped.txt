@@ -1,4 +1,10 @@
 abstract Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderBase<TSource>.DefaultSort.get -> (string! Name, Taazaa.Shared.DevKit.Framework.Search.SortOrder.ISortOrderDirective! Directive)
+override Taazaa.Shared.DevKit.Framework.Search.JsonConverters.BooleanSearchCriteriaJsonConverter.Read(ref System.Text.Json.Utf8JsonReader reader, System.Type! typeToConvert, System.Text.Json.JsonSerializerOptions! options) -> Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.BooleanSearchCriteria!
+override Taazaa.Shared.DevKit.Framework.Search.JsonConverters.BooleanSearchCriteriaJsonConverter.Write(System.Text.Json.Utf8JsonWriter! writer, Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.BooleanSearchCriteria! value, System.Text.Json.JsonSerializerOptions! options) -> void
+override Taazaa.Shared.DevKit.Framework.Search.JsonConverters.ComparableSearchExpressionJsonConverter.CanConvert(System.Type! typeToConvert) -> bool
+override Taazaa.Shared.DevKit.Framework.Search.JsonConverters.ComparableSearchExpressionJsonConverter.CreateConverter(System.Type! typeToConvert, System.Text.Json.JsonSerializerOptions! options) -> System.Text.Json.Serialization.JsonConverter!
+override Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SearchValueJsonConverter.CanConvert(System.Type! typeToConvert) -> bool
+override Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SearchValueJsonConverter.CreateConverter(System.Type! typeToConvert, System.Text.Json.JsonSerializerOptions! options) -> System.Text.Json.Serialization.JsonConverter!
 override Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SortOrderDirectiveJsonConverter.CanConvert(System.Type! typeToConvert) -> bool
 override Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SortOrderDirectiveJsonConverter.CreateConverter(System.Type! typeToConvert, System.Text.Json.JsonSerializerOptions! options) -> System.Text.Json.Serialization.JsonConverter!
 static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.AndSearchExpression<T>.implicit operator Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.AndSearchExpression<T>!(Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions.ComparableSearchCriteria<T>![]! clauses) -> Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.AndSearchExpression<T>!
@@ -41,6 +47,12 @@ static Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>.implicit opera
 static Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>.implicit operator Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>!(TMember?[]! values) -> Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>!
 static Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortingQueryableExtensions.ApplySort<T>(this System.Linq.IQueryable<T>! queryable, System.Collections.Generic.IEnumerable<Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderBase<T>!>! sortOrders) -> System.Linq.IQueryable<T>!
 static Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>.implicit operator Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>!(Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirection direction) -> Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>!
+Taazaa.Shared.DevKit.Framework.Search.JsonConverters.BooleanSearchCriteriaJsonConverter
+Taazaa.Shared.DevKit.Framework.Search.JsonConverters.BooleanSearchCriteriaJsonConverter.BooleanSearchCriteriaJsonConverter() -> void
+Taazaa.Shared.DevKit.Framework.Search.JsonConverters.ComparableSearchExpressionJsonConverter
+Taazaa.Shared.DevKit.Framework.Search.JsonConverters.ComparableSearchExpressionJsonConverter.ComparableSearchExpressionJsonConverter() -> void
+Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SearchValueJsonConverter
+Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SearchValueJsonConverter.SearchValueJsonConverter() -> void
 Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SortOrderDirectiveJsonConverter
 Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SortOrderDirectiveJsonConverter.SortOrderDirectiveJsonConverter() -> void
 Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.AndSearchExpression<T>
