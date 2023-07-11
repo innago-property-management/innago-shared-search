@@ -1,7 +1,7 @@
 # InSearchExpression&lt;TSource&gt; Implicit operator (1 of 2)
 
 ```csharp
-public static implicit operator InSearchExpression(SearchValues<TSource?> searchValues)
+public static implicit operator InSearchExpression(SearchValues<TSource> searchValues)
 ```
 
 ## See Also
@@ -15,7 +15,7 @@ public static implicit operator InSearchExpression(SearchValues<TSource?> search
 # InSearchExpression&lt;TSource&gt; Implicit operator (2 of 2)
 
 ```csharp
-public static implicit operator InSearchExpression(TSource?[] values)
+public static implicit operator InSearchExpression(TSource[] values)
 ```
 
 ## See Also

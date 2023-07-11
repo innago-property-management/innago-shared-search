@@ -1,7 +1,7 @@
 # NotInSearchExpression&lt;TSource&gt; Implicit operator (1 of 2)
 
 ```csharp
-public static implicit operator NotInSearchExpression(SearchValues<TSource?> searchValues)
+public static implicit operator NotInSearchExpression(SearchValues<TSource> searchValues)
 ```
 
 ## See Also
@@ -15,7 +15,7 @@ public static implicit operator NotInSearchExpression(SearchValues<TSource?> sea
 # NotInSearchExpression&lt;TSource&gt; Implicit operator (2 of 2)
 
 ```csharp
-public static implicit operator NotInSearchExpression(TSource?[] values)
+public static implicit operator NotInSearchExpression(TSource[] values)
 ```
 
 ## See Also

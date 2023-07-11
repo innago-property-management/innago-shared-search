@@ -35,6 +35,7 @@
 | --- | --- |
 | class [BooleanSearchCriteria](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/BooleanSearchCriteria.md) | Represents a search criteria that can be used to search for a comparable value. |
 | interface [IComparableSearchCriteria&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/IComparableSearchCriteria-1.md) | Represents a search criteria that can be used to search for a comparable value. |
+| class [ValueSearchCriteria&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/ValueSearchCriteria-1.md) | Represents a search criteria that can be used to search for a comparable value. |
 
 ## Taazaa.Shared.DevKit.Framework.Search.SortOrder namespace
 

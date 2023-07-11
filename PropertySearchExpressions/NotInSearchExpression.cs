@@ -38,7 +38,7 @@ public class NotInSearchExpression<TSource> : ISearchExpression
     /// <returns>
     ///     The <see cref="InSearchExpression{TSource}" /> that was created.
     /// </returns>
-    public static implicit operator NotInSearchExpression<TSource>(SearchValues<TSource?> searchValues)
+    public static implicit operator NotInSearchExpression<TSource>(SearchValues<TSource> searchValues)
     {
         return new NotInSearchExpression<TSource> { Values = searchValues.Values };
     }
@@ -52,7 +52,7 @@ public class NotInSearchExpression<TSource> : ISearchExpression
     /// <returns>
     ///     The <see cref="InSearchExpression{TSource}" /> that was created.
     /// </returns>
-    public static implicit operator NotInSearchExpression<TSource>(TSource?[] values)
+    public static implicit operator NotInSearchExpression<TSource>(TSource[] values)
     {
         return new NotInSearchExpression<TSource> { Values = values };
     }

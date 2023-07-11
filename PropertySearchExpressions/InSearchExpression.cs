@@ -36,7 +36,7 @@ public class InSearchExpression<TSource> : ISearchExpression
     /// <returns>
     ///     The <see cref="InSearchExpression{TSource}" /> that was created.
     /// </returns>
-    public static implicit operator InSearchExpression<TSource>(SearchValues<TSource?> searchValues)
+    public static implicit operator InSearchExpression<TSource>(SearchValues<TSource> searchValues)
     {
         return new InSearchExpression<TSource> { Values = searchValues.Values };
     }
@@ -48,7 +48,7 @@ public class InSearchExpression<TSource> : ISearchExpression
     ///     The <typeparamref name="TSource" /> array to convert.
     /// </param>
     /// <returns></returns>
-    public static implicit operator InSearchExpression<TSource>(TSource?[] values)
+    public static implicit operator InSearchExpression<TSource>(TSource[] values)
     {
         return new InSearchExpression<TSource> { Values = values };
     }
