@@ -12,6 +12,9 @@ public class StringSearchCriteria : StringSearchExpression
 | --- | --- |
 | [StringSearchCriteria](StringSearchCriteria/StringSearchCriteria.md)() | The default constructor. |
 | [Contains](StringSearchCriteria/Contains.md) { get; set; } | Gets or sets the value to search for in the String property. |
+| [DoesNotContain](StringSearchCriteria/DoesNotContain.md) { get; set; } | Gets or sets the value to search for in the String property. |
+| [DoesNotEndWith](StringSearchCriteria/DoesNotEndWith.md) { get; set; } | Gets or sets the value to search for in the String property. |
+| [DoesNotStartWith](StringSearchCriteria/DoesNotStartWith.md) { get; set; } | Gets or sets the value to search for in the String property. |
 | [EndsWith](StringSearchCriteria/EndsWith.md) { get; set; } | Gets or sets the value to search for in the String property. |
 | [StartsWith](StringSearchCriteria/StartsWith.md) { get; set; } | Gets or sets the value to search for in the String property. |
 
