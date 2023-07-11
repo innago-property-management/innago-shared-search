@@ -1,10 +1,26 @@
 # Taazaa.Shared.DevKit.Framework.Search assembly
 
+## Taazaa.Shared.DevKit.Framework.Search namespace
+
+| public type | description |
+| --- | --- |
+| record [SearchValue&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search/SearchValue-1.md) | Represents a value that can be used in a search. |
+| record [SearchValues&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search/SearchValues-1.md) | Represents a set of values that can be used in a search. |
+
 ## Taazaa.Shared.DevKit.Framework.Search.JsonConverters namespace
 
 | public type | description |
 | --- | --- |
 | class [SortOrderDirectiveJsonConverter](./Taazaa.Shared.DevKit.Framework.Search.JsonConverters/SortOrderDirectiveJsonConverter.md) | The sort order directive json converter. |
+
+## Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions namespace
+
+| public type | description |
+| --- | --- |
+| class [EqualToSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/EqualToSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
+| class [GreaterThanOrEqualToSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/GreaterThanOrEqualToSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
+| class [GreaterThanSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/GreaterThanSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
+| interface [ISearchExpression](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/ISearchExpression.md) | Defines a search expression. |
 
 ## Taazaa.Shared.DevKit.Framework.Search.SortOrder namespace
 
