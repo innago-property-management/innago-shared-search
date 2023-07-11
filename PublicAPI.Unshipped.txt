@@ -5,6 +5,8 @@ static Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortingQueryableExtension
 static Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>.implicit operator Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>!(Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirection direction) -> Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>!
 Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SortOrderDirectiveJsonConverter
 Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SortOrderDirectiveJsonConverter.SortOrderDirectiveJsonConverter() -> void
+Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.ISearchExpression
+Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.ISearchExpression.GetExpression(System.Linq.Expressions.MemberExpression! memberExpression) -> System.Linq.Expressions.Expression!
 Taazaa.Shared.DevKit.Framework.Search.SortOrder.ISortOrderDirective
 Taazaa.Shared.DevKit.Framework.Search.SortOrder.ISortOrderDirective.Apply<TSource>(System.Linq.IQueryable<TSource>! queryable, string! propertyName) -> System.Linq.IOrderedQueryable<TSource>!
 Taazaa.Shared.DevKit.Framework.Search.SortOrder.ISortOrderDirective.Direction.get -> Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirection
