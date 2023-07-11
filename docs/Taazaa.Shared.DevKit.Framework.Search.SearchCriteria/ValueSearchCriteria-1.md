@@ -3,7 +3,7 @@
 Represents a search criteria that can be used to search for a comparable value.
 
 ```csharp
-public class ValueSearchCriteria<TMember> : ComparableSearchExpression<TMember>, 
+public class ValueSearchCriteria<TMember> : ComparableSearchCriteria<TMember>, 
     IComparableSearchCriteria<TMember>
 ```
 
@@ -29,7 +29,7 @@ public class ValueSearchCriteria<TMember> : ComparableSearchExpression<TMember>,
 
 ## See Also
 
-* class [ComparableSearchExpression&lt;TMember&gt;](../Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions/ComparableSearchExpression-1.md)
+* class [ComparableSearchCriteria&lt;TMember&gt;](../Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions/ComparableSearchCriteria-1.md)
 * interface [IComparableSearchCriteria&lt;TMember&gt;](./IComparableSearchCriteria-1.md)
 * namespace [Taazaa.Shared.DevKit.Framework.Search.SearchCriteria](../Taazaa.Shared.DevKit.Framework.Search.md)
 

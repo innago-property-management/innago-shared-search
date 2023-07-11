@@ -10,7 +10,7 @@ using Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions;
 /// </summary>
 [PublicAPI]
 ////[JsonConverter(typeof(BooleanSearchCriteriaJsonConverter))] TODO
-public class BooleanSearchCriteria : ComparableSearchExpression<bool>
+public class BooleanSearchCriteria : ComparableSearchCriteria<bool>
 {
     private SearchValue<bool>? value;
 

@@ -17,7 +17,7 @@ using Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions;
 /// </typeparam>
 [PublicAPI]
 ////[JsonConverter(typeof(ComparableSearchExpressionJsonConverter))] TODO
-public class ValueSearchCriteria<TMember> : ComparableSearchExpression<TMember>, IComparableSearchCriteria<TMember>
+public class ValueSearchCriteria<TMember> : ComparableSearchCriteria<TMember>, IComparableSearchCriteria<TMember>
 {
     private IEnumerable<ValueSearchCriteria<TMember>>? and;
     private SearchValue<TMember>? equalTo;

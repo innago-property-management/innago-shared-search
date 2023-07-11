@@ -12,13 +12,13 @@ using JetBrains.Annotations;
 using Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions;
 
 /// <summary>
-///     A search expression that combines multiple <see cref="ComparableSearchExpression{TMember}" />s into a single
+///     A search expression that combines multiple <see cref="ComparableSearchCriteria{TMember}" />s into a single
 /// </summary>
 /// <typeparam name="TMember">
 ///     The type of the property.
 /// </typeparam>
 [PublicAPI]
-public class ComparableSearchExpression<TMember> : ISearchExpression
+public class ComparableSearchCriteria<TMember> : ISearchExpression
 {
     Expression ISearchExpression.GetExpression(MemberExpression memberExpression)
     {

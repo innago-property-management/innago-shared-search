@@ -32,6 +32,7 @@ static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.StringEnd
 static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.StringStartsWithSearchExpression.implicit operator Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.StringStartsWithSearchExpression!(string! value) -> Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.StringStartsWithSearchExpression!
 static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.StringStartsWithSearchExpression.implicit operator Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.StringStartsWithSearchExpression!(Taazaa.Shared.DevKit.Framework.Search.SearchValue<string!>! searchValue) -> Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.StringStartsWithSearchExpression!
 static Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.BooleanSearchCriteria.implicit operator Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.BooleanSearchCriteria!(bool value) -> Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.BooleanSearchCriteria!
+static Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.SearchCriteriaBase<TSource>.implicit operator System.Linq.Expressions.Expression<System.Func<TSource, bool>!>!(Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.SearchCriteriaBase<TSource>! searchCriteria) -> System.Linq.Expressions.Expression<System.Func<TSource, bool>!>!
 static Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>.implicit operator Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>!(TMember value) -> Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>!
 static Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>.implicit operator Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>!(TMember?[]! values) -> Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>!
 static Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortingQueryableExtensions.ApplySort<T>(this System.Linq.IQueryable<T>! queryable, System.Collections.Generic.IEnumerable<Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderBase<T>!>! sortOrders) -> System.Linq.IQueryable<T>!
@@ -93,9 +94,17 @@ Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.IComparableSearchCriteria<T
 Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.IComparableSearchCriteria<TMember>.NotEqualTo.set -> void
 Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.IComparableSearchCriteria<TMember>.NotIn.get -> Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>?
 Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.IComparableSearchCriteria<TMember>.NotIn.set -> void
+Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.SearchCriteriaBase<TSource>
+Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.SearchCriteriaBase<TSource>.SearchCriteriaBase() -> void
 Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.StringSearchCriteria
 Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.StringSearchCriteria.Contains.get -> Taazaa.Shared.DevKit.Framework.Search.SearchValue<string!>?
 Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.StringSearchCriteria.Contains.set -> void
+Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.StringSearchCriteria.DoesNotContain.get -> Taazaa.Shared.DevKit.Framework.Search.SearchValue<string!>?
+Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.StringSearchCriteria.DoesNotContain.set -> void
+Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.StringSearchCriteria.DoesNotEndWith.get -> Taazaa.Shared.DevKit.Framework.Search.SearchValue<string!>?
+Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.StringSearchCriteria.DoesNotEndWith.set -> void
+Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.StringSearchCriteria.DoesNotStartWith.get -> Taazaa.Shared.DevKit.Framework.Search.SearchValue<string!>?
+Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.StringSearchCriteria.DoesNotStartWith.set -> void
 Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.StringSearchCriteria.EndsWith.get -> Taazaa.Shared.DevKit.Framework.Search.SearchValue<string!>?
 Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.StringSearchCriteria.EndsWith.set -> void
 Taazaa.Shared.DevKit.Framework.Search.SearchCriteria.StringSearchCriteria.StartsWith.get -> Taazaa.Shared.DevKit.Framework.Search.SearchValue<string!>?
@@ -144,7 +153,7 @@ Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>.Ap
 Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>.Direction.get -> Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirection
 Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>.Direction.set -> void
 Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>.SortOrderDirective() -> void
-Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions.ComparableSearchExpression<TMember>
-Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions.ComparableSearchExpression<TMember>.ComparableSearchExpression() -> void
+Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions.ComparableSearchCriteria<TMember>
+Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions.ComparableSearchCriteria<TMember>.ComparableSearchCriteria() -> void
 Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions.StringSearchExpression
 Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions.StringSearchExpression.StringSearchExpression() -> void

@@ -26,10 +26,10 @@ public class AndSearchExpression<T> : ISearchExpression
             (agg, next) => Expression.AndAlso(agg, (next as ISearchExpression).GetExpression(memberExpression)));
     }
 
-    private IEnumerable<ComparableSearchExpression<T>>? Expressions { get; set; }
+    private IEnumerable<ComparableSearchCriteria<T>>? Expressions { get; set; }
 
     /// <summary>
-    ///     Implicitly converts an array of <see cref="ComparableSearchExpression{T}" /> to an
+    ///     Implicitly converts an array of <see cref="ComparableSearchCriteria{TMember}" /> to an
     /// </summary>
     /// <param name="clauses">
     ///     The clauses to convert.
@@ -37,11 +37,11 @@ public class AndSearchExpression<T> : ISearchExpression
     /// <returns>
     ///     The <see cref="AndSearchExpression{T}" />.
     /// </returns>
-    public static implicit operator AndSearchExpression<T>(ComparableSearchExpression<T>[] clauses)
+    public static implicit operator AndSearchExpression<T>(ComparableSearchCriteria<T>[] clauses)
     {
         return new AndSearchExpression<T>
         {
-            Expressions = new List<ComparableSearchExpression<T>>(clauses),
+            Expressions = new List<ComparableSearchCriteria<T>>(clauses),
         };
     }
 }

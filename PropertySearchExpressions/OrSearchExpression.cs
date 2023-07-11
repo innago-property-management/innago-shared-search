@@ -26,10 +26,10 @@ public class OrSearchExpression<T> : ISearchExpression
             Expression.OrElse);
     }
 
-    private IEnumerable<ComparableSearchExpression<T>>? Expressions { get; set; }
+    private IEnumerable<ComparableSearchCriteria<T>>? Expressions { get; set; }
 
     /// <summary>
-    ///     Implicitly converts an array of <see cref="ComparableSearchExpression{T}" /> to an
+    ///     Implicitly converts an array of <see cref="ComparableSearchCriteria{TMember}" /> to an
     ///     <see cref="OrSearchExpression{T}" />.
     /// </summary>
     /// <param name="clauses">
@@ -38,11 +38,11 @@ public class OrSearchExpression<T> : ISearchExpression
     /// <returns>
     ///     The <see cref="OrSearchExpression{T}" />.
     /// </returns>
-    public static implicit operator OrSearchExpression<T>(ComparableSearchExpression<T>[] clauses)
+    public static implicit operator OrSearchExpression<T>(ComparableSearchCriteria<T>[] clauses)
     {
         return new OrSearchExpression<T>
         {
-            Expressions = new List<ComparableSearchExpression<T>>(clauses),
+            Expressions = new List<ComparableSearchCriteria<T>>(clauses),
         };
     }
 }

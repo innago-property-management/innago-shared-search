@@ -1,12 +1,12 @@
 # AndSearchExpression&lt;T&gt; Implicit operator
 
 ```csharp
-public static implicit operator AndSearchExpression(ComparableSearchExpression<T>[] clauses)
+public static implicit operator AndSearchExpression(ComparableSearchCriteria<T>[] clauses)
 ```
 
 ## See Also
 
-* class [ComparableSearchExpression&lt;TMember&gt;](../../Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions/ComparableSearchExpression-1.md)
+* class [ComparableSearchCriteria&lt;TMember&gt;](../../Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions/ComparableSearchCriteria-1.md)
 * class [AndSearchExpression&lt;T&gt;](../AndSearchExpression-1.md)
 * namespace [Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions](../../Taazaa.Shared.DevKit.Framework.Search.md)
 
