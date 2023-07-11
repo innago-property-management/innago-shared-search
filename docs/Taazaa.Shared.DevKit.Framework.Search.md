@@ -29,6 +29,13 @@
 | class [NotInSearchExpression&lt;TSource&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/NotInSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
 | class [OrSearchExpression&lt;T&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/OrSearchExpression-1.md) | Represents a search expression that is a logical OR of other search expressions. |
 
+## Taazaa.Shared.DevKit.Framework.Search.SearchCriteria namespace
+
+| public type | description |
+| --- | --- |
+| class [BooleanSearchCriteria](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/BooleanSearchCriteria.md) | Represents a search criteria that can be used to search for a comparable value. |
+| interface [IComparableSearchCriteria&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/IComparableSearchCriteria-1.md) | Represents a search criteria that can be used to search for a comparable value. |
+
 ## Taazaa.Shared.DevKit.Framework.Search.SortOrder namespace
 
 | public type | description |
