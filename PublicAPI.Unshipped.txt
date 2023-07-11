@@ -1,6 +1,7 @@
 abstract Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderBase<TSource>.DefaultSort.get -> (string! Name, Taazaa.Shared.DevKit.Framework.Search.SortOrder.ISortOrderDirective! Directive)
 override Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SortOrderDirectiveJsonConverter.CanConvert(System.Type! typeToConvert) -> bool
 override Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SortOrderDirectiveJsonConverter.CreateConverter(System.Type! typeToConvert, System.Text.Json.JsonSerializerOptions! options) -> System.Text.Json.Serialization.JsonConverter!
+static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.AndSearchExpression<T>.implicit operator Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.AndSearchExpression<T>!(Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions.ComparableSearchExpression<T>![]! clauses) -> Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.AndSearchExpression<T>!
 static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>.implicit operator Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>!(Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember?>! searchValue) -> Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>!
 static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>.implicit operator Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>!(TMember? value) -> Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>!
 static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.GreaterThanOrEqualToSearchExpression<TMember>.implicit operator Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.GreaterThanOrEqualToSearchExpression<TMember>!(Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>! searchValue) -> Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.GreaterThanOrEqualToSearchExpression<TMember>!
@@ -17,12 +18,15 @@ static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.NotEqualT
 static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.NotEqualToSearchExpression<TMember>.implicit operator Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.NotEqualToSearchExpression<TMember>!(TMember? value) -> Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.NotEqualToSearchExpression<TMember>!
 static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.NotInSearchExpression<TSource>.implicit operator Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.NotInSearchExpression<TSource>!(Taazaa.Shared.DevKit.Framework.Search.SearchValues<TSource?>! searchValues) -> Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.NotInSearchExpression<TSource>!
 static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.NotInSearchExpression<TSource>.implicit operator Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.NotInSearchExpression<TSource>!(TSource?[]! values) -> Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.NotInSearchExpression<TSource>!
+static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.OrSearchExpression<T>.implicit operator Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.OrSearchExpression<T>!(Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions.ComparableSearchExpression<T>![]! clauses) -> Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.OrSearchExpression<T>!
 static Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>.implicit operator Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>!(TMember value) -> Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>!
 static Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>.implicit operator Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>!(TMember?[]! values) -> Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>!
 static Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortingQueryableExtensions.ApplySort<T>(this System.Linq.IQueryable<T>! queryable, System.Collections.Generic.IEnumerable<Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderBase<T>!>! sortOrders) -> System.Linq.IQueryable<T>!
 static Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>.implicit operator Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>!(Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirection direction) -> Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>!
 Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SortOrderDirectiveJsonConverter
 Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SortOrderDirectiveJsonConverter.SortOrderDirectiveJsonConverter() -> void
+Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.AndSearchExpression<T>
+Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.AndSearchExpression<T>.AndSearchExpression() -> void
 Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>
 Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>.EqualToSearchExpression() -> void
 Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.GreaterThanOrEqualToSearchExpression<TMember>
@@ -41,6 +45,8 @@ Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.NotEqualToSearch
 Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.NotEqualToSearchExpression<TMember>.NotEqualToSearchExpression() -> void
 Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.NotInSearchExpression<TSource>
 Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.NotInSearchExpression<TSource>.NotInSearchExpression() -> void
+Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.OrSearchExpression<T>
+Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.OrSearchExpression<T>.OrSearchExpression() -> void
 Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>
 Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>.Value.get -> TMember?
 Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>
@@ -62,3 +68,5 @@ Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>.Ap
 Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>.Direction.get -> Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirection
 Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>.Direction.set -> void
 Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>.SortOrderDirective() -> void
+Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions.ComparableSearchExpression<TMember>
+Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions.ComparableSearchExpression<TMember>.ComparableSearchExpression() -> void
