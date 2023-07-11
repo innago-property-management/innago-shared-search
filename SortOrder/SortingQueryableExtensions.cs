@@ -25,6 +25,22 @@ public static class SortingQueryableExtensions
     /// <returns>
     ///     The <see cref="IQueryable{T}" /> with the <see cref="SortOrderBase{TSource}" /> entries applied in order.
     /// </returns>
+    /// <example>
+    /// <code>
+    /// IQueryable&lt;Dummy> data = new[]
+    /// {
+    ///   // ...
+    /// }
+    /// 
+    /// var sortOrders = new[]
+    /// {
+    ///   new DummySortOrder { Name = SortOrderDirection.Ascending },
+    ///   new DummySortOrder { Id = SortOrderDirection.Ascending },
+    /// };
+    /// 
+    /// var result = data.ApplySort(sortOrders); 
+    /// </code>
+    /// </example>
     public static IQueryable<T> ApplySort<T>(this IQueryable<T> queryable, IEnumerable<SortOrderBase<T>> sortOrders)
     {
         return sortOrders.Aggregate(queryable, (current, sortOrder) => sortOrder.Apply(current));

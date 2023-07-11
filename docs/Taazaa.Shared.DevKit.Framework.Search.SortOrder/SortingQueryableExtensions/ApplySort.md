@@ -17,6 +17,23 @@ public static IQueryable<T> ApplySort<T>(this IQueryable<T> queryable,
 
 The IQueryable with the [`SortOrderBase`](../SortOrderBase-1.md) entries applied in order.
 
+## Examples
+
+```csharp
+IQueryable<Dummy> data = new[]
+{
+  // ...
+}
+
+var sortOrders = new[]
+{
+  new DummySortOrder { Name = SortOrderDirection.Ascending },
+  new DummySortOrder { Id = SortOrderDirection.Ascending },
+};
+
+var result = data.ApplySort(sortOrders); 
+```
+
 ## See Also
 
 * class [SortOrderBase&lt;TSource&gt;](../SortOrderBase-1.md)
