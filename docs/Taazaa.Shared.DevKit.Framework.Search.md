@@ -21,6 +21,7 @@
 | class [GreaterThanOrEqualToSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/GreaterThanOrEqualToSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
 | class [GreaterThanSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/GreaterThanSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
 | interface [ISearchExpression](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/ISearchExpression.md) | Defines a search expression. |
+| class [LessThanOrEqualToSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/LessThanOrEqualToSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
 
 ## Taazaa.Shared.DevKit.Framework.Search.SortOrder namespace
 
