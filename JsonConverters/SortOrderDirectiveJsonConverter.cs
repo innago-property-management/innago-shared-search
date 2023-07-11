@@ -9,13 +9,18 @@ using System.Text.Json.Serialization;
 
 using Taazaa.Shared.DevKit.Framework.Search.SortOrder;
 
+/// <summary>
+///     The sort order directive json converter.
+/// </summary>
 public class SortOrderDirectiveJsonConverter : JsonConverterFactory
 {
+    /// <inheritdoc />
     public override bool CanConvert(Type typeToConvert)
     {
         return typeToConvert.IsGenericType && typeToConvert.GetGenericTypeDefinition() == typeof(SortOrderDirective<>);
     }
-    
+
+    /// <inheritdoc />
     public override JsonConverter CreateConverter(Type typeToConvert, JsonSerializerOptions options)
     {
         Type paramType = typeToConvert.GetGenericArguments().Single();
