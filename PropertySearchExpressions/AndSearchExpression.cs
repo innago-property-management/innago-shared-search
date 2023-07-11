@@ -1,4 +1,5 @@
 #nullable enable
+
 namespace Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions;
 
 using System.Collections.Generic;

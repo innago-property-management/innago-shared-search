@@ -39,8 +39,10 @@
 
 | public type | description |
 | --- | --- |
+| class [AndSearchCriteria&lt;TSearchCriteria,TSource&gt;](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/AndSearchCriteria-2.md) | Logical AND of criteria |
 | class [BooleanSearchCriteria](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/BooleanSearchCriteria.md) | Represents a search criteria that can be used to search for a comparable value. |
 | interface [IComparableSearchCriteria&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/IComparableSearchCriteria-1.md) | Represents a search criteria that can be used to search for a comparable value. |
+| class [OrSearchCriteria&lt;TSearchCriteria,TSource&gt;](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/OrSearchCriteria-2.md) | Logical OR of criteria. |
 | abstract class [SearchCriteriaBase&lt;TSource&gt;](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/SearchCriteriaBase-1.md) | The [`SearchCriteriaBase`](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/SearchCriteriaBase-1.md) class is used to specify search criteria for a *TSource* |
 | class [StringSearchCriteria](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/StringSearchCriteria.md) | The [`StringSearchCriteria`](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/StringSearchCriteria.md) class is used to specify search criteria for a String property. |
 | class [ValueSearchCriteria&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/ValueSearchCriteria-1.md) | Represents a search criteria that can be used to search for a comparable value. |

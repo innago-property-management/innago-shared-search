@@ -15,7 +15,7 @@ public class NotEqualToSearchExpression<TMember> : ISearchExpression
     {
         Expression constantExpression = Expression.Constant(this.Value);
 
-        return Expression.Equal(memberExpression, constantExpression);
+        return Expression.NotEqual(memberExpression, constantExpression);
     }
 
     private TMember? Value { get; set; }
