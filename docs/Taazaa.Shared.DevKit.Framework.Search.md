@@ -20,10 +20,12 @@
 | class [EqualToSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/EqualToSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
 | class [GreaterThanOrEqualToSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/GreaterThanOrEqualToSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
 | class [GreaterThanSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/GreaterThanSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
+| class [InSearchExpression&lt;TSource&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/InSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
 | interface [ISearchExpression](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/ISearchExpression.md) | Defines a search expression. |
 | class [LessThanOrEqualToSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/LessThanOrEqualToSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
 | class [LessThanSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/LessThanSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
 | class [NotEqualToSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/NotEqualToSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
+| class [NotInSearchExpression&lt;TSource&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/NotInSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
 
 ## Taazaa.Shared.DevKit.Framework.Search.SortOrder namespace
 
