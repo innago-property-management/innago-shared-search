@@ -28,6 +28,12 @@
 | class [NotEqualToSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/NotEqualToSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
 | class [NotInSearchExpression&lt;TSource&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/NotInSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
 | class [OrSearchExpression&lt;T&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/OrSearchExpression-1.md) | Represents a search expression that is a logical OR of other search expressions. |
+| class [StringContainsSearchExpression](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/StringContainsSearchExpression.md) | Represents a search expression that checks if a string contains a value. |
+| class [StringDoesNotContainSearchExpression](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/StringDoesNotContainSearchExpression.md) | Represents a search expression that checks if a string does not contain a value. |
+| class [StringDoesNotEndWithSearchExpression](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/StringDoesNotEndWithSearchExpression.md) | Represents a search expression that checks if a string DoesNotEndWith a value. |
+| class [StringDoesNotStartWithSearchExpression](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/StringDoesNotStartWithSearchExpression.md) | Represents a search expression that checks if a string does not StartsWith a value. |
+| class [StringEndsWithSearchExpression](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/StringEndsWithSearchExpression.md) | Represents a search expression that checks if a string EndsWith a value. |
+| class [StringStartsWithSearchExpression](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/StringStartsWithSearchExpression.md) | Represents a search expression that checks if a string StartsWith a value. |
 
 ## Taazaa.Shared.DevKit.Framework.Search.SearchCriteria namespace
 
@@ -35,6 +41,7 @@
 | --- | --- |
 | class [BooleanSearchCriteria](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/BooleanSearchCriteria.md) | Represents a search criteria that can be used to search for a comparable value. |
 | interface [IComparableSearchCriteria&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/IComparableSearchCriteria-1.md) | Represents a search criteria that can be used to search for a comparable value. |
+| class [StringSearchCriteria](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/StringSearchCriteria.md) | The [`StringSearchCriteria`](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/StringSearchCriteria.md) class is used to specify search criteria for a String property. |
 | class [ValueSearchCriteria&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.SearchCriteria/ValueSearchCriteria-1.md) | Represents a search criteria that can be used to search for a comparable value. |
 
 ## Taazaa.Shared.DevKit.Framework.Search.SortOrder namespace
@@ -52,11 +59,6 @@
 | public type | description |
 | --- | --- |
 | class [ComparableSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions/ComparableSearchExpression-1.md) | A search expression that combines multiple [`ComparableSearchExpression`](./Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions/ComparableSearchExpression-1.md)s into a single |
-| class [StringContainsSearchExpression](./Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions/StringContainsSearchExpression.md) | Represents a search expression that checks if a string contains a value. |
-| class [StringDoesNotContainSearchExpression](./Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions/StringDoesNotContainSearchExpression.md) | Represents a search expression that checks if a string does not contain a value. |
-| class [StringDoesNotEndWithSearchExpression](./Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions/StringDoesNotEndWithSearchExpression.md) | Represents a search expression that checks if a string DoesNotEndWith a value. |
-| class [StringDoesNotStartWithSearchExpression](./Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions/StringDoesNotStartWithSearchExpression.md) | Represents a search expression that checks if a string does not StartsWith a value. |
-| class [StringEndsWithSearchExpression](./Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions/StringEndsWithSearchExpression.md) | Represents a search expression that checks if a string EndsWith a value. |
-| class [StringStartsWithSearchExpression](./Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions/StringStartsWithSearchExpression.md) | Represents a search expression that checks if a string StartsWith a value. |
+| class [StringSearchExpression](./Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions/StringSearchExpression.md) | The [`StringSearchExpression`](./Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions/StringSearchExpression.md) class is used to specify search criteria for a String property. |
 
 <!-- DO NOT EDIT: generated by xmldocmd for Taazaa.Shared.DevKit.Framework.Search.dll -->

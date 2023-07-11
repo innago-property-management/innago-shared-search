@@ -1,10 +1,8 @@
 #nullable enable
-namespace Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions;
+namespace Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions;
 
 using System.Linq.Expressions;
 using System.Reflection;
-
-using Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions;
 
 /// <summary>
 ///     Represents a search expression that checks if a string DoesNotEndWith a value.
