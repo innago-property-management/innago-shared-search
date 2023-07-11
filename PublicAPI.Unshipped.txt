@@ -1,12 +1,22 @@
 abstract Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderBase<TSource>.DefaultSort.get -> (string! Name, Taazaa.Shared.DevKit.Framework.Search.SortOrder.ISortOrderDirective! Directive)
 override Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SortOrderDirectiveJsonConverter.CanConvert(System.Type! typeToConvert) -> bool
 override Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SortOrderDirectiveJsonConverter.CreateConverter(System.Type! typeToConvert, System.Text.Json.JsonSerializerOptions! options) -> System.Text.Json.Serialization.JsonConverter!
+static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>.implicit operator Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>!(Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember?>! searchValue) -> Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>!
+static Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>.implicit operator Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>!(TMember? value) -> Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>!
+static Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>.implicit operator Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>!(TMember value) -> Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>!
+static Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>.implicit operator Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>!(TMember?[]! values) -> Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>!
 static Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortingQueryableExtensions.ApplySort<T>(this System.Linq.IQueryable<T>! queryable, System.Collections.Generic.IEnumerable<Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderBase<T>!>! sortOrders) -> System.Linq.IQueryable<T>!
 static Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>.implicit operator Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>!(Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirection direction) -> Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirective<TProperty>!
 Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SortOrderDirectiveJsonConverter
 Taazaa.Shared.DevKit.Framework.Search.JsonConverters.SortOrderDirectiveJsonConverter.SortOrderDirectiveJsonConverter() -> void
+Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>
+Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>.EqualToSearchExpression() -> void
 Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.ISearchExpression
 Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions.ISearchExpression.GetExpression(System.Linq.Expressions.MemberExpression! memberExpression) -> System.Linq.Expressions.Expression!
+Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>
+Taazaa.Shared.DevKit.Framework.Search.SearchValue<TMember>.Value.get -> TMember?
+Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>
+Taazaa.Shared.DevKit.Framework.Search.SearchValues<TMember>.Values.get -> System.Collections.Generic.IEnumerable<TMember?>?
 Taazaa.Shared.DevKit.Framework.Search.SortOrder.ISortOrderDirective
 Taazaa.Shared.DevKit.Framework.Search.SortOrder.ISortOrderDirective.Apply<TSource>(System.Linq.IQueryable<TSource>! queryable, string! propertyName) -> System.Linq.IOrderedQueryable<TSource>!
 Taazaa.Shared.DevKit.Framework.Search.SortOrder.ISortOrderDirective.Direction.get -> Taazaa.Shared.DevKit.Framework.Search.SortOrder.SortOrderDirection
