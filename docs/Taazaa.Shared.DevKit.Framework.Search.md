@@ -23,6 +23,7 @@
 | interface [ISearchExpression](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/ISearchExpression.md) | Defines a search expression. |
 | class [LessThanOrEqualToSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/LessThanOrEqualToSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
 | class [LessThanSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/LessThanSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
+| class [NotEqualToSearchExpression&lt;TMember&gt;](./Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions/NotEqualToSearchExpression-1.md) | Represents a search expression that compares a property to a value. |
 
 ## Taazaa.Shared.DevKit.Framework.Search.SortOrder namespace
 
