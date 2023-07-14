@@ -57,7 +57,7 @@ public class ComparableSearchExpressionJsonConverter : JsonConverterFactory
 
                 string propName = reader.GetString() ?? string.Empty;
 
-                PropertyInfo? prop = destProps.Single(p => p.Name == propName);
+                PropertyInfo? prop = destProps.Single(p => p.Name.Equals(propName, StringComparison.InvariantCultureIgnoreCase));
                 Type propType = prop.PropertyType;
                 object? value = JsonSerializer.Deserialize(ref reader, propType, options);
                 prop.SetValue(retVal, value);
