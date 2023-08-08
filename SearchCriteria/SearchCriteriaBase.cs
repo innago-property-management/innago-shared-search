@@ -45,7 +45,7 @@ public abstract class SearchCriteriaBase<TSource>
 
         searchExpressions = searchExpressions.ToList();
 
-        if (searchExpressions.Any() is false)
+        if (!searchExpressions.Any())
         {
             return source => true;
         }

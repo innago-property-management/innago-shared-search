@@ -33,7 +33,7 @@ public class ComparableSearchCriteria<TMember> : ISearchExpression
 
         searchExpressions = searchExpressions.ToList();
 
-        if (searchExpressions.Any() is false)
+        if (!searchExpressions.Any())
         {
             return Expression.Constant(true);
         }

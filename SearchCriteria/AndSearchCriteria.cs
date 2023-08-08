@@ -47,7 +47,7 @@ public class AndSearchCriteria<TSearchCriteria, TSource>
 
     private Expression<Func<TSource, bool>> GetPredicate()
     {
-        if (this.Criteria == null || this.Criteria.Any() is false)
+        if (this.Criteria == null || !this.Criteria.Any())
         {
             return source => true;
         }
