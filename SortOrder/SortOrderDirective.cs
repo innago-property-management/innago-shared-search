@@ -7,6 +7,8 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text.Json.Serialization;
 
+using JetBrains.Annotations;
+
 using Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
 
 /// <summary>
@@ -15,6 +17,7 @@ using Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
 /// <typeparam name="TProperty">
 ///    The type of the property.
 /// </typeparam>
+[PublicAPI]
 [JsonConverter(typeof(SortOrderDirectiveJsonConverter))]
 public class SortOrderDirective<TProperty> : ISortOrderDirective
 {
