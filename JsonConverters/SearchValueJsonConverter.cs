@@ -1,10 +1,10 @@
 #nullable enable
-namespace Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
-
 using System;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
 
 /// <summary>
 ///     Converts a <see cref="SearchValue{TMember}" /> to or from JSON.

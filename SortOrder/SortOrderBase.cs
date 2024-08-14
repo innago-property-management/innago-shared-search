@@ -1,10 +1,10 @@
 #nullable enable
 
-namespace Taazaa.Shared.DevKit.Framework.Search.SortOrder;
-
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.SortOrder;
 
 /// <summary>
 ///     Base class for sort order classes.

@@ -1,9 +1,9 @@
 #nullable enable
 
-namespace Taazaa.Shared.DevKit.Framework.Search.SortOrder;
-
 using System.Collections.Generic;
 using System.Linq;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.SortOrder;
 
 /// <summary>
 ///     The sorting queryable extensions.

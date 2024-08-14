@@ -1,15 +1,13 @@
 #nullable enable
 
-namespace Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions;
-
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-
 using JetBrains.Annotations;
-
 using Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions;
 
 /// <summary>
 ///     A search expression that combines multiple <see cref="ComparableSearchCriteria{TMember}" />s into a single

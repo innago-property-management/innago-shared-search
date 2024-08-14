@@ -1,10 +1,9 @@
 #nullable enable
 
-namespace Taazaa.Shared.DevKit.Framework.Search.SortOrder;
-
 using System.Linq;
-
 using JetBrains.Annotations;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.SortOrder;
 
 /// <summary>
 ///     The interface for a sort order directive.

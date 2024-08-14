@@ -1,7 +1,7 @@
 #nullable enable
-namespace Taazaa.Shared.DevKit.Framework.Search;
-
 using System.Collections.Generic;
+
+namespace Taazaa.Shared.DevKit.Framework.Search;
 
 /// <summary>
 ///     Represents a set of values that can be used in a search.

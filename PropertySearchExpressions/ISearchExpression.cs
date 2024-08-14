@@ -1,10 +1,9 @@
 #nullable enable
 
-namespace Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions;
-
 using System.Linq.Expressions;
-
 using JetBrains.Annotations;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions;
 
 /// <summary>
 ///     Defines a search expression.

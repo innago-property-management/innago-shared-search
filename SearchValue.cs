@@ -1,9 +1,10 @@
+using System.Text.Json.Serialization;
+using Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
+
 namespace Taazaa.Shared.DevKit.Framework.Search;
 
 #nullable enable
-using System.Text.Json.Serialization;
 
-using Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
 
 /// <summary>
 ///     Represents a value that can be used in a search.

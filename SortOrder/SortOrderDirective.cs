@@ -1,15 +1,13 @@
 #nullable enable
 
-namespace Taazaa.Shared.DevKit.Framework.Search.SortOrder;
-
 using System;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text.Json.Serialization;
-
 using JetBrains.Annotations;
-
 using Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.SortOrder;
 
 /// <summary>
 ///    The sort order directive.

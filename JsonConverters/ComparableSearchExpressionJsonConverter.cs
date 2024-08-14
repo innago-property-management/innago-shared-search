@@ -1,14 +1,13 @@
 #nullable enable
-namespace Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-
 using Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
 
 /// <summary>
 ///    Converts a <see cref="IComparableSearchCriteria{TMember}" /> to JSON.

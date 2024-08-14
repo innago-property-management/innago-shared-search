@@ -1,8 +1,8 @@
 #nullable enable
 
-namespace Taazaa.Shared.DevKit.Framework.Search.SortOrder;
-
 using JetBrains.Annotations;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.SortOrder;
 
 /// <summary>
 ///     The direction of the sort order.

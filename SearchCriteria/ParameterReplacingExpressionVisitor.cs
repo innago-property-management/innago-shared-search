@@ -1,6 +1,6 @@
-namespace Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
-
 using System.Linq.Expressions;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
 
 internal class ParameterReplacingExpressionVisitor : ExpressionVisitor
 {

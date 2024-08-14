@@ -1,12 +1,10 @@
 #nullable enable
-namespace Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
-
 using System.Text.Json.Serialization;
-
 using JetBrains.Annotations;
-
 using Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
 using Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
 
 /// <summary>
 ///     Represents a search criteria that can be used to search for a comparable value.

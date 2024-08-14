@@ -1,9 +1,8 @@
 #nullable enable
-namespace Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
-
 using JetBrains.Annotations;
-
 using Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
 
 /// <summary>
 ///     The <see cref="StringSearchCriteria" /> class is used to specify search criteria for a <see cref="string" />

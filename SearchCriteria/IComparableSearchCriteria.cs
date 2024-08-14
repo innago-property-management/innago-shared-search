@@ -1,8 +1,8 @@
 #nullable enable
 
-namespace Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
-
 using JetBrains.Annotations;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
 
 /// <summary>
 ///    Represents a search criteria that can be used to search for a comparable value.

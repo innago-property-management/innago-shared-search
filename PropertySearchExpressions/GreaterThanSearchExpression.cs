@@ -1,7 +1,7 @@
 #nullable enable
-namespace Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions;
-
 using System.Linq.Expressions;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions;
 
 /// <summary>
 ///     Represents a search expression that compares a property to a value.

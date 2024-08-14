@@ -1,14 +1,12 @@
 #nullable enable
-namespace Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-
 using JetBrains.Annotations;
-
 using Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
 
 /// <summary>
 ///     The <see cref="SearchCriteriaBase{TSource}" /> class is used to specify search criteria for a

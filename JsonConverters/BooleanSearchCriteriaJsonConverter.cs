@@ -1,11 +1,10 @@
 #nullable enable
-namespace Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
-
 using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-
 using Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
 
 /// <summary>
 ///     Converts a <see cref="BooleanSearchCriteria" /> to or from JSON.

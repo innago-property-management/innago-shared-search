@@ -1,13 +1,12 @@
 #nullable enable
 
-namespace Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
-
 using System;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-
 using Taazaa.Shared.DevKit.Framework.Search.SortOrder;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.JsonConverters;
 
 /// <summary>
 ///     The sort order directive json converter.

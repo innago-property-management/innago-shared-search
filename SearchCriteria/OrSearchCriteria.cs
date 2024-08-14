@@ -1,10 +1,10 @@
 #nullable enable
-namespace Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.SearchCriteria;
 
 /// <summary>
 ///     Logical OR of criteria.

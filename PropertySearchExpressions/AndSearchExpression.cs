@@ -1,12 +1,11 @@
 #nullable enable
 
-namespace Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions;
-
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-
 using Taazaa.Shared.DevKit.Framework.Search.TypeSearchExpressions;
+
+namespace Taazaa.Shared.DevKit.Framework.Search.PropertySearchExpressions;
 
 /// <summary>
 ///     Represents a search expression that is a logical AND of other search expressions.
