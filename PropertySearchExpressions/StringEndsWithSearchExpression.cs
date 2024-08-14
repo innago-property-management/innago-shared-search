@@ -11,7 +11,7 @@ public class StringEndsWithSearchExpression : ISearchExpression
 {
     Expression ISearchExpression.GetExpression(MemberExpression memberExpression)
     {
-        MethodInfo method = typeof(string).GetMethod(nameof(string.EndsWith), new[] { typeof(string) })!;
+        MethodInfo method = typeof(string).GetMethod(nameof(string.EndsWith), [typeof(string)])!;
 
         ConstantExpression constant = Expression.Constant(this.Value);
         MethodCallExpression methodCall = Expression.Call(memberExpression, method, constant);

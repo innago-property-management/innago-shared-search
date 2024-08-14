@@ -11,7 +11,7 @@ public class StringDoesNotStartWithSearchExpression : ISearchExpression
 {
     Expression ISearchExpression.GetExpression(MemberExpression memberExpression)
     {
-        MethodInfo method = typeof(string).GetMethod(nameof(string.StartsWith), new[] { typeof(string) })!;
+        MethodInfo method = typeof(string).GetMethod(nameof(string.StartsWith), [typeof(string)])!;
 
         ConstantExpression constant = Expression.Constant(this.Value);
         MethodCallExpression methodCall = Expression.Call(memberExpression, method, constant);

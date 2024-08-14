@@ -11,7 +11,7 @@ public class StringDoesNotContainSearchExpression : ISearchExpression
 {
     Expression ISearchExpression.GetExpression(MemberExpression memberExpression)
     {
-        MethodInfo method = typeof(string).GetMethod(nameof(string.Contains), new[] { typeof(string) })!;
+        MethodInfo method = typeof(string).GetMethod(nameof(string.Contains), [typeof(string)])!;
 
         ConstantExpression constant = Expression.Constant(this.Value);
         MethodCallExpression methodCall = Expression.Call(memberExpression, method, constant);
