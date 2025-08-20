@@ -1,0 +1,180 @@
+#nullable enable
+abstract Innago.Shared.Search.SortOrder.SortOrderBase<TSource>.DefaultSort.get -> (string! Name, Innago.Shared.Search.SortOrder.ISortOrderDirective! Directive)
+override Innago.Shared.Search.JsonConverters.BooleanSearchCriteriaJsonConverter.Read(ref System.Text.Json.Utf8JsonReader reader, System.Type! typeToConvert, System.Text.Json.JsonSerializerOptions! options) -> Innago.Shared.Search.SearchCriteria.BooleanSearchCriteria!
+override Innago.Shared.Search.JsonConverters.BooleanSearchCriteriaJsonConverter.Write(System.Text.Json.Utf8JsonWriter! writer, Innago.Shared.Search.SearchCriteria.BooleanSearchCriteria! value, System.Text.Json.JsonSerializerOptions! options) -> void
+override Innago.Shared.Search.JsonConverters.ComparableSearchExpressionJsonConverter.CanConvert(System.Type! typeToConvert) -> bool
+override Innago.Shared.Search.JsonConverters.ComparableSearchExpressionJsonConverter.CreateConverter(System.Type! typeToConvert, System.Text.Json.JsonSerializerOptions! options) -> System.Text.Json.Serialization.JsonConverter!
+override Innago.Shared.Search.JsonConverters.SearchValueJsonConverter.CanConvert(System.Type! typeToConvert) -> bool
+override Innago.Shared.Search.JsonConverters.SearchValueJsonConverter.CreateConverter(System.Type! typeToConvert, System.Text.Json.JsonSerializerOptions! options) -> System.Text.Json.Serialization.JsonConverter!
+override Innago.Shared.Search.JsonConverters.SortOrderDirectiveJsonConverter.CanConvert(System.Type! typeToConvert) -> bool
+override Innago.Shared.Search.JsonConverters.SortOrderDirectiveJsonConverter.CreateConverter(System.Type! typeToConvert, System.Text.Json.JsonSerializerOptions! options) -> System.Text.Json.Serialization.JsonConverter!
+static Innago.Shared.Search.PropertySearchExpressions.AndSearchExpression<T>.implicit operator Innago.Shared.Search.PropertySearchExpressions.AndSearchExpression<T>!(Innago.Shared.Search.TypeSearchExpressions.ComparableSearchCriteria<T>![]! clauses) -> Innago.Shared.Search.PropertySearchExpressions.AndSearchExpression<T>!
+static Innago.Shared.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>.implicit operator Innago.Shared.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>!(Innago.Shared.Search.SearchValue<TMember?>! searchValue) -> Innago.Shared.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>!
+static Innago.Shared.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>.implicit operator Innago.Shared.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>!(TMember? value) -> Innago.Shared.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>!
+static Innago.Shared.Search.PropertySearchExpressions.GreaterThanOrEqualToSearchExpression<TMember>.implicit operator Innago.Shared.Search.PropertySearchExpressions.GreaterThanOrEqualToSearchExpression<TMember>!(Innago.Shared.Search.SearchValue<TMember>! searchValue) -> Innago.Shared.Search.PropertySearchExpressions.GreaterThanOrEqualToSearchExpression<TMember>!
+static Innago.Shared.Search.PropertySearchExpressions.GreaterThanOrEqualToSearchExpression<TMember>.implicit operator Innago.Shared.Search.PropertySearchExpressions.GreaterThanOrEqualToSearchExpression<TMember>!(TMember? value) -> Innago.Shared.Search.PropertySearchExpressions.GreaterThanOrEqualToSearchExpression<TMember>!
+static Innago.Shared.Search.PropertySearchExpressions.GreaterThanSearchExpression<TMember>.implicit operator Innago.Shared.Search.PropertySearchExpressions.GreaterThanSearchExpression<TMember>!(Innago.Shared.Search.SearchValue<TMember>! searchValue) -> Innago.Shared.Search.PropertySearchExpressions.GreaterThanSearchExpression<TMember>!
+static Innago.Shared.Search.PropertySearchExpressions.GreaterThanSearchExpression<TMember>.implicit operator Innago.Shared.Search.PropertySearchExpressions.GreaterThanSearchExpression<TMember>!(TMember? value) -> Innago.Shared.Search.PropertySearchExpressions.GreaterThanSearchExpression<TMember>!
+static Innago.Shared.Search.PropertySearchExpressions.InSearchExpression<TSource>.implicit operator Innago.Shared.Search.PropertySearchExpressions.InSearchExpression<TSource>!(Innago.Shared.Search.SearchValues<TSource>! searchValues) -> Innago.Shared.Search.PropertySearchExpressions.InSearchExpression<TSource>!
+static Innago.Shared.Search.PropertySearchExpressions.InSearchExpression<TSource>.implicit operator Innago.Shared.Search.PropertySearchExpressions.InSearchExpression<TSource>!(TSource[]! values) -> Innago.Shared.Search.PropertySearchExpressions.InSearchExpression<TSource>!
+static Innago.Shared.Search.PropertySearchExpressions.LessThanOrEqualToSearchExpression<TMember>.implicit operator Innago.Shared.Search.PropertySearchExpressions.LessThanOrEqualToSearchExpression<TMember>!(Innago.Shared.Search.SearchValue<TMember>! searchValue) -> Innago.Shared.Search.PropertySearchExpressions.LessThanOrEqualToSearchExpression<TMember>!
+static Innago.Shared.Search.PropertySearchExpressions.LessThanOrEqualToSearchExpression<TMember>.implicit operator Innago.Shared.Search.PropertySearchExpressions.LessThanOrEqualToSearchExpression<TMember>!(TMember? value) -> Innago.Shared.Search.PropertySearchExpressions.LessThanOrEqualToSearchExpression<TMember>!
+static Innago.Shared.Search.PropertySearchExpressions.LessThanSearchExpression<TMember>.implicit operator Innago.Shared.Search.PropertySearchExpressions.LessThanSearchExpression<TMember>!(Innago.Shared.Search.SearchValue<TMember>! searchValue) -> Innago.Shared.Search.PropertySearchExpressions.LessThanSearchExpression<TMember>!
+static Innago.Shared.Search.PropertySearchExpressions.LessThanSearchExpression<TMember>.implicit operator Innago.Shared.Search.PropertySearchExpressions.LessThanSearchExpression<TMember>!(TMember? value) -> Innago.Shared.Search.PropertySearchExpressions.LessThanSearchExpression<TMember>!
+static Innago.Shared.Search.PropertySearchExpressions.NotEqualToSearchExpression<TMember>.implicit operator Innago.Shared.Search.PropertySearchExpressions.NotEqualToSearchExpression<TMember>!(Innago.Shared.Search.SearchValue<TMember?>! searchValue) -> Innago.Shared.Search.PropertySearchExpressions.NotEqualToSearchExpression<TMember>!
+static Innago.Shared.Search.PropertySearchExpressions.NotEqualToSearchExpression<TMember>.implicit operator Innago.Shared.Search.PropertySearchExpressions.NotEqualToSearchExpression<TMember>!(TMember? value) -> Innago.Shared.Search.PropertySearchExpressions.NotEqualToSearchExpression<TMember>!
+static Innago.Shared.Search.PropertySearchExpressions.NotInSearchExpression<TSource>.implicit operator Innago.Shared.Search.PropertySearchExpressions.NotInSearchExpression<TSource>!(Innago.Shared.Search.SearchValues<TSource>! searchValues) -> Innago.Shared.Search.PropertySearchExpressions.NotInSearchExpression<TSource>!
+static Innago.Shared.Search.PropertySearchExpressions.NotInSearchExpression<TSource>.implicit operator Innago.Shared.Search.PropertySearchExpressions.NotInSearchExpression<TSource>!(TSource[]! values) -> Innago.Shared.Search.PropertySearchExpressions.NotInSearchExpression<TSource>!
+static Innago.Shared.Search.PropertySearchExpressions.OrSearchExpression<T>.implicit operator Innago.Shared.Search.PropertySearchExpressions.OrSearchExpression<T>!(Innago.Shared.Search.TypeSearchExpressions.ComparableSearchCriteria<T>![]! clauses) -> Innago.Shared.Search.PropertySearchExpressions.OrSearchExpression<T>!
+static Innago.Shared.Search.PropertySearchExpressions.StringContainsSearchExpression.implicit operator Innago.Shared.Search.PropertySearchExpressions.StringContainsSearchExpression!(string! value) -> Innago.Shared.Search.PropertySearchExpressions.StringContainsSearchExpression!
+static Innago.Shared.Search.PropertySearchExpressions.StringContainsSearchExpression.implicit operator Innago.Shared.Search.PropertySearchExpressions.StringContainsSearchExpression!(Innago.Shared.Search.SearchValue<string!>! searchValue) -> Innago.Shared.Search.PropertySearchExpressions.StringContainsSearchExpression!
+static Innago.Shared.Search.PropertySearchExpressions.StringDoesNotContainSearchExpression.implicit operator Innago.Shared.Search.PropertySearchExpressions.StringDoesNotContainSearchExpression!(string! value) -> Innago.Shared.Search.PropertySearchExpressions.StringDoesNotContainSearchExpression!
+static Innago.Shared.Search.PropertySearchExpressions.StringDoesNotContainSearchExpression.implicit operator Innago.Shared.Search.PropertySearchExpressions.StringDoesNotContainSearchExpression!(Innago.Shared.Search.SearchValue<string!>! searchValue) -> Innago.Shared.Search.PropertySearchExpressions.StringDoesNotContainSearchExpression!
+static Innago.Shared.Search.PropertySearchExpressions.StringDoesNotEndWithSearchExpression.implicit operator Innago.Shared.Search.PropertySearchExpressions.StringDoesNotEndWithSearchExpression!(string! value) -> Innago.Shared.Search.PropertySearchExpressions.StringDoesNotEndWithSearchExpression!
+static Innago.Shared.Search.PropertySearchExpressions.StringDoesNotEndWithSearchExpression.implicit operator Innago.Shared.Search.PropertySearchExpressions.StringDoesNotEndWithSearchExpression!(Innago.Shared.Search.SearchValue<string!>! searchValue) -> Innago.Shared.Search.PropertySearchExpressions.StringDoesNotEndWithSearchExpression!
+static Innago.Shared.Search.PropertySearchExpressions.StringDoesNotStartWithSearchExpression.implicit operator Innago.Shared.Search.PropertySearchExpressions.StringDoesNotStartWithSearchExpression!(string! value) -> Innago.Shared.Search.PropertySearchExpressions.StringDoesNotStartWithSearchExpression!
+static Innago.Shared.Search.PropertySearchExpressions.StringDoesNotStartWithSearchExpression.implicit operator Innago.Shared.Search.PropertySearchExpressions.StringDoesNotStartWithSearchExpression!(Innago.Shared.Search.SearchValue<string!>! searchValue) -> Innago.Shared.Search.PropertySearchExpressions.StringDoesNotStartWithSearchExpression!
+static Innago.Shared.Search.PropertySearchExpressions.StringEndsWithSearchExpression.implicit operator Innago.Shared.Search.PropertySearchExpressions.StringEndsWithSearchExpression!(string! value) -> Innago.Shared.Search.PropertySearchExpressions.StringEndsWithSearchExpression!
+static Innago.Shared.Search.PropertySearchExpressions.StringEndsWithSearchExpression.implicit operator Innago.Shared.Search.PropertySearchExpressions.StringEndsWithSearchExpression!(Innago.Shared.Search.SearchValue<string!>! searchValue) -> Innago.Shared.Search.PropertySearchExpressions.StringEndsWithSearchExpression!
+static Innago.Shared.Search.PropertySearchExpressions.StringStartsWithSearchExpression.implicit operator Innago.Shared.Search.PropertySearchExpressions.StringStartsWithSearchExpression!(string! value) -> Innago.Shared.Search.PropertySearchExpressions.StringStartsWithSearchExpression!
+static Innago.Shared.Search.PropertySearchExpressions.StringStartsWithSearchExpression.implicit operator Innago.Shared.Search.PropertySearchExpressions.StringStartsWithSearchExpression!(Innago.Shared.Search.SearchValue<string!>! searchValue) -> Innago.Shared.Search.PropertySearchExpressions.StringStartsWithSearchExpression!
+static Innago.Shared.Search.SearchCriteria.AndSearchCriteria<TSearchCriteria, TSource>.implicit operator System.Linq.Expressions.Expression<System.Func<TSource, bool>!>!(Innago.Shared.Search.SearchCriteria.AndSearchCriteria<TSearchCriteria!, TSource>! searchCriteria) -> System.Linq.Expressions.Expression<System.Func<TSource, bool>!>!
+static Innago.Shared.Search.SearchCriteria.AndSearchCriteria<TSearchCriteria, TSource>.implicit operator Innago.Shared.Search.SearchCriteria.AndSearchCriteria<TSearchCriteria!, TSource>!(TSearchCriteria![]! criteria) -> Innago.Shared.Search.SearchCriteria.AndSearchCriteria<TSearchCriteria!, TSource>!
+static Innago.Shared.Search.SearchCriteria.BooleanSearchCriteria.implicit operator Innago.Shared.Search.SearchCriteria.BooleanSearchCriteria!(bool value) -> Innago.Shared.Search.SearchCriteria.BooleanSearchCriteria!
+static Innago.Shared.Search.SearchCriteria.OrSearchCriteria<TSearchCriteria, TSource>.implicit operator System.Linq.Expressions.Expression<System.Func<TSource, bool>!>!(Innago.Shared.Search.SearchCriteria.OrSearchCriteria<TSearchCriteria!, TSource>! searchCriteria) -> System.Linq.Expressions.Expression<System.Func<TSource, bool>!>!
+static Innago.Shared.Search.SearchCriteria.OrSearchCriteria<TSearchCriteria, TSource>.implicit operator Innago.Shared.Search.SearchCriteria.OrSearchCriteria<TSearchCriteria!, TSource>!(TSearchCriteria![]! criteria) -> Innago.Shared.Search.SearchCriteria.OrSearchCriteria<TSearchCriteria!, TSource>!
+static Innago.Shared.Search.SearchCriteria.SearchCriteriaBase<TSource>.implicit operator System.Linq.Expressions.Expression<System.Func<TSource, bool>!>!(Innago.Shared.Search.SearchCriteria.SearchCriteriaBase<TSource>! searchCriteria) -> System.Linq.Expressions.Expression<System.Func<TSource, bool>!>!
+static Innago.Shared.Search.SearchValue<TMember>.implicit operator Innago.Shared.Search.SearchValue<TMember>!(TMember value) -> Innago.Shared.Search.SearchValue<TMember>!
+static Innago.Shared.Search.SearchValues<TMember>.implicit operator Innago.Shared.Search.SearchValues<TMember>!(TMember?[]! values) -> Innago.Shared.Search.SearchValues<TMember>!
+static Innago.Shared.Search.SortOrder.SortingQueryableExtensions.ApplySort<T>(this System.Linq.IQueryable<T>! queryable, System.Collections.Generic.IEnumerable<Innago.Shared.Search.SortOrder.SortOrderBase<T>!>! sortOrders) -> System.Linq.IQueryable<T>!
+static Innago.Shared.Search.SortOrder.SortOrderDirective<TProperty>.implicit operator Innago.Shared.Search.SortOrder.SortOrderDirective<TProperty>!(Innago.Shared.Search.SortOrder.SortOrderDirection direction) -> Innago.Shared.Search.SortOrder.SortOrderDirective<TProperty>!
+Innago.Shared.Search.JsonConverters.BooleanSearchCriteriaJsonConverter
+Innago.Shared.Search.JsonConverters.BooleanSearchCriteriaJsonConverter.BooleanSearchCriteriaJsonConverter() -> void
+Innago.Shared.Search.JsonConverters.ComparableSearchExpressionJsonConverter
+Innago.Shared.Search.JsonConverters.ComparableSearchExpressionJsonConverter.ComparableSearchExpressionJsonConverter() -> void
+Innago.Shared.Search.JsonConverters.SearchValueJsonConverter
+Innago.Shared.Search.JsonConverters.SearchValueJsonConverter.SearchValueJsonConverter() -> void
+Innago.Shared.Search.JsonConverters.SortOrderDirectiveJsonConverter
+Innago.Shared.Search.JsonConverters.SortOrderDirectiveJsonConverter.SortOrderDirectiveJsonConverter() -> void
+Innago.Shared.Search.PropertySearchExpressions.AndSearchExpression<T>
+Innago.Shared.Search.PropertySearchExpressions.AndSearchExpression<T>.AndSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>
+Innago.Shared.Search.PropertySearchExpressions.EqualToSearchExpression<TMember>.EqualToSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.GreaterThanOrEqualToSearchExpression<TMember>
+Innago.Shared.Search.PropertySearchExpressions.GreaterThanOrEqualToSearchExpression<TMember>.GreaterThanOrEqualToSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.GreaterThanSearchExpression<TMember>
+Innago.Shared.Search.PropertySearchExpressions.GreaterThanSearchExpression<TMember>.GreaterThanSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.InSearchExpression<TSource>
+Innago.Shared.Search.PropertySearchExpressions.InSearchExpression<TSource>.InSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.ISearchExpression
+Innago.Shared.Search.PropertySearchExpressions.ISearchExpression.GetExpression(System.Linq.Expressions.MemberExpression! memberExpression) -> System.Linq.Expressions.Expression!
+Innago.Shared.Search.PropertySearchExpressions.LessThanOrEqualToSearchExpression<TMember>
+Innago.Shared.Search.PropertySearchExpressions.LessThanOrEqualToSearchExpression<TMember>.LessThanOrEqualToSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.LessThanSearchExpression<TMember>
+Innago.Shared.Search.PropertySearchExpressions.LessThanSearchExpression<TMember>.LessThanSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.NotEqualToSearchExpression<TMember>
+Innago.Shared.Search.PropertySearchExpressions.NotEqualToSearchExpression<TMember>.NotEqualToSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.NotInSearchExpression<TSource>
+Innago.Shared.Search.PropertySearchExpressions.NotInSearchExpression<TSource>.NotInSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.OrSearchExpression<T>
+Innago.Shared.Search.PropertySearchExpressions.OrSearchExpression<T>.OrSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.StringContainsSearchExpression
+Innago.Shared.Search.PropertySearchExpressions.StringContainsSearchExpression.StringContainsSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.StringDoesNotContainSearchExpression
+Innago.Shared.Search.PropertySearchExpressions.StringDoesNotContainSearchExpression.StringDoesNotContainSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.StringDoesNotEndWithSearchExpression
+Innago.Shared.Search.PropertySearchExpressions.StringDoesNotEndWithSearchExpression.StringDoesNotEndWithSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.StringDoesNotStartWithSearchExpression
+Innago.Shared.Search.PropertySearchExpressions.StringDoesNotStartWithSearchExpression.StringDoesNotStartWithSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.StringEndsWithSearchExpression
+Innago.Shared.Search.PropertySearchExpressions.StringEndsWithSearchExpression.StringEndsWithSearchExpression() -> void
+Innago.Shared.Search.PropertySearchExpressions.StringStartsWithSearchExpression
+Innago.Shared.Search.PropertySearchExpressions.StringStartsWithSearchExpression.StringStartsWithSearchExpression() -> void
+Innago.Shared.Search.SearchCriteria.AndSearchCriteria<TSearchCriteria, TSource>
+Innago.Shared.Search.SearchCriteria.AndSearchCriteria<TSearchCriteria, TSource>.AndSearchCriteria() -> void
+Innago.Shared.Search.SearchCriteria.BooleanSearchCriteria
+Innago.Shared.Search.SearchCriteria.BooleanSearchCriteria.BooleanSearchCriteria() -> void
+Innago.Shared.Search.SearchCriteria.BooleanSearchCriteria.Value.get -> Innago.Shared.Search.SearchValue<bool>?
+Innago.Shared.Search.SearchCriteria.BooleanSearchCriteria.Value.set -> void
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.EqualTo.get -> Innago.Shared.Search.SearchValue<TMember>?
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.EqualTo.set -> void
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.GreaterThan.get -> Innago.Shared.Search.SearchValue<TMember>?
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.GreaterThan.set -> void
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.GreaterThanOrEqualTo.get -> Innago.Shared.Search.SearchValue<TMember>?
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.GreaterThanOrEqualTo.set -> void
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.In.get -> Innago.Shared.Search.SearchValues<TMember>?
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.In.set -> void
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.LessThan.get -> Innago.Shared.Search.SearchValue<TMember>?
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.LessThan.set -> void
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.LessThanOrEqualTo.get -> Innago.Shared.Search.SearchValue<TMember>?
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.LessThanOrEqualTo.set -> void
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.NotEqualTo.get -> Innago.Shared.Search.SearchValue<TMember>?
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.NotEqualTo.set -> void
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.NotIn.get -> Innago.Shared.Search.SearchValues<TMember>?
+Innago.Shared.Search.SearchCriteria.IComparableSearchCriteria<TMember>.NotIn.set -> void
+Innago.Shared.Search.SearchCriteria.OrSearchCriteria<TSearchCriteria, TSource>
+Innago.Shared.Search.SearchCriteria.OrSearchCriteria<TSearchCriteria, TSource>.OrSearchCriteria() -> void
+Innago.Shared.Search.SearchCriteria.SearchCriteriaBase<TSource>
+Innago.Shared.Search.SearchCriteria.SearchCriteriaBase<TSource>.SearchCriteriaBase() -> void
+Innago.Shared.Search.SearchCriteria.StringSearchCriteria
+Innago.Shared.Search.SearchCriteria.StringSearchCriteria.Contains.get -> Innago.Shared.Search.SearchValue<string!>?
+Innago.Shared.Search.SearchCriteria.StringSearchCriteria.Contains.set -> void
+Innago.Shared.Search.SearchCriteria.StringSearchCriteria.DoesNotContain.get -> Innago.Shared.Search.SearchValue<string!>?
+Innago.Shared.Search.SearchCriteria.StringSearchCriteria.DoesNotContain.set -> void
+Innago.Shared.Search.SearchCriteria.StringSearchCriteria.DoesNotEndWith.get -> Innago.Shared.Search.SearchValue<string!>?
+Innago.Shared.Search.SearchCriteria.StringSearchCriteria.DoesNotEndWith.set -> void
+Innago.Shared.Search.SearchCriteria.StringSearchCriteria.DoesNotStartWith.get -> Innago.Shared.Search.SearchValue<string!>?
+Innago.Shared.Search.SearchCriteria.StringSearchCriteria.DoesNotStartWith.set -> void
+Innago.Shared.Search.SearchCriteria.StringSearchCriteria.EndsWith.get -> Innago.Shared.Search.SearchValue<string!>?
+Innago.Shared.Search.SearchCriteria.StringSearchCriteria.EndsWith.set -> void
+Innago.Shared.Search.SearchCriteria.StringSearchCriteria.StartsWith.get -> Innago.Shared.Search.SearchValue<string!>?
+Innago.Shared.Search.SearchCriteria.StringSearchCriteria.StartsWith.set -> void
+Innago.Shared.Search.SearchCriteria.StringSearchCriteria.StringSearchCriteria() -> void
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.And.get -> System.Collections.Generic.IEnumerable<Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>!>?
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.And.set -> void
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.EqualTo.get -> Innago.Shared.Search.SearchValue<TMember>?
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.EqualTo.set -> void
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.GreaterThan.get -> Innago.Shared.Search.SearchValue<TMember>?
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.GreaterThan.set -> void
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.GreaterThanOrEqualTo.get -> Innago.Shared.Search.SearchValue<TMember>?
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.GreaterThanOrEqualTo.set -> void
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.In.get -> Innago.Shared.Search.SearchValues<TMember>?
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.In.set -> void
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.LessThan.get -> Innago.Shared.Search.SearchValue<TMember>?
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.LessThan.set -> void
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.LessThanOrEqualTo.get -> Innago.Shared.Search.SearchValue<TMember>?
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.LessThanOrEqualTo.set -> void
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.NotEqualTo.get -> Innago.Shared.Search.SearchValue<TMember>?
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.NotEqualTo.set -> void
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.NotIn.get -> Innago.Shared.Search.SearchValues<TMember>?
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.NotIn.set -> void
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.Or.get -> System.Collections.Generic.IEnumerable<Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>!>?
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.Or.set -> void
+Innago.Shared.Search.SearchCriteria.ValueSearchCriteria<TMember>.ValueSearchCriteria() -> void
+Innago.Shared.Search.SearchValue<TMember>
+Innago.Shared.Search.SearchValue<TMember>.Value.get -> TMember?
+Innago.Shared.Search.SearchValues<TMember>
+Innago.Shared.Search.SearchValues<TMember>.Values.get -> System.Collections.Generic.IEnumerable<TMember?>?
+Innago.Shared.Search.SortOrder.ISortOrderDirective
+Innago.Shared.Search.SortOrder.ISortOrderDirective.Apply<TSource>(System.Linq.IQueryable<TSource>! queryable, string! propertyName) -> System.Linq.IOrderedQueryable<TSource>!
+Innago.Shared.Search.SortOrder.ISortOrderDirective.Direction.get -> Innago.Shared.Search.SortOrder.SortOrderDirection
+Innago.Shared.Search.SortOrder.ISortOrderDirective.Direction.set -> void
+Innago.Shared.Search.SortOrder.SortingQueryableExtensions
+Innago.Shared.Search.SortOrder.SortOrderBase<TSource>
+Innago.Shared.Search.SortOrder.SortOrderBase<TSource>.Apply(System.Linq.IQueryable<TSource>! queryable) -> System.Linq.IOrderedQueryable<TSource>!
+Innago.Shared.Search.SortOrder.SortOrderBase<TSource>.SortOrderBase() -> void
+Innago.Shared.Search.SortOrder.SortOrderBase<TSource>.Validate(System.ComponentModel.DataAnnotations.ValidationContext! validationContext) -> System.Collections.Generic.IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult!>!
+Innago.Shared.Search.SortOrder.SortOrderDirection
+Innago.Shared.Search.SortOrder.SortOrderDirection.Ascending = 0 -> Innago.Shared.Search.SortOrder.SortOrderDirection
+Innago.Shared.Search.SortOrder.SortOrderDirection.Descending = 1 -> Innago.Shared.Search.SortOrder.SortOrderDirection
+Innago.Shared.Search.SortOrder.SortOrderDirective<TProperty>
+Innago.Shared.Search.SortOrder.SortOrderDirective<TProperty>.Apply<TSource>(System.Linq.IQueryable<TSource>! queryable, string! propertyName) -> System.Linq.IOrderedQueryable<TSource>!
+Innago.Shared.Search.SortOrder.SortOrderDirective<TProperty>.Direction.get -> Innago.Shared.Search.SortOrder.SortOrderDirection
+Innago.Shared.Search.SortOrder.SortOrderDirective<TProperty>.Direction.set -> void
+Innago.Shared.Search.SortOrder.SortOrderDirective<TProperty>.SortOrderDirective() -> void
+Innago.Shared.Search.TypeSearchExpressions.ComparableSearchCriteria<TMember>
+Innago.Shared.Search.TypeSearchExpressions.ComparableSearchCriteria<TMember>.ComparableSearchCriteria() -> void
+Innago.Shared.Search.TypeSearchExpressions.StringSearchExpression
+Innago.Shared.Search.TypeSearchExpressions.StringSearchExpression.StringSearchExpression() -> void
