@@ -1,0 +1,11 @@
+[
+  "SonarAnalyzer.CSharp",
+  "Serilog.*",
+  "System.*",
+  "Moq",
+  "Moq.Analyzers",
+  "NETStandard.Library",
+  "AwesomeAssertions",
+  "Bogus",
+  "Innago.*"
+]
